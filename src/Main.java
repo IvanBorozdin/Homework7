@@ -111,13 +111,17 @@ public class Main {
         int d = 100;
         int c = a - b;
         int n = a + d;
-        for (int k = a; k < n; k = k + 79) {
+        int k = a;
+
+        while (k < n){
+            k=k+79;
+
             System.out.println(k);
         }
-             for (int i = a; i > c; i = i - 79) {
-                  System.out.println(i);
+        for (int i = a; i > c; i = i - 79) {
+            System.out.println(i);
+        }
+
+
     }
-
-
-}
  }
