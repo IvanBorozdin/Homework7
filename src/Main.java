@@ -50,9 +50,9 @@ public class Main {
         birthRate = y / 1000 * birthRate;
         mortality = y / 1000 * mortality;
 
-        for (int i = 1; i <= 10; i = i + 1) {
+        for (int i = 0; i < 10; i = i + 1) {
             y = y + birthRate - mortality;
-            System.out.println("Год " + i + " .Чисто населения состовляет" + y);
+            System.out.println("Год " + (i + 1) + " .Чисто населения состовляет" + y);
         }
 
 
@@ -61,10 +61,9 @@ public class Main {
     public static void tasks4() {
         System.out.println("Задания 4");
         int salary = 15000;
-        int total = 0;
-        for (int i = 0; total <= 12000000; i++) {
+        int total = 15000;
+        for (int i = 1; total <= 12000000; i++) {
             total = total + total / 100 * 7;
-            total = total + salary;
             System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
         }
     }
@@ -72,10 +71,10 @@ public class Main {
     public static void tasks5() {
         System.out.println("Задания 5");
         int salary = 15000;
-        int total = 0;
-        for (int i = 0; total <= 12000000; i++) {
+        int total = 15000;
+        for (int i = 1; total <= 12000000; i++) {
             total = total + total / 100 * 7;
-            total = total + salary;
+
             if (i % 6 == 0) {
                 System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
             }
@@ -86,10 +85,9 @@ public class Main {
     public static void tasks6() {
         System.out.println("Задания 6");
         int salary = 15000;
-        int total = 0;
-        for (int i = 0; i <= 9 * 12; i++) {
+        int total = 15000;
+        for (int i = 1; i <= 9 * 12; i++) {
             total = total + total / 100 * 7;
-            total = total + salary;
             if (i % 6 == 0) {
                 System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
             }
@@ -107,21 +105,14 @@ public class Main {
     public static void tasks8() {
         System.out.println("Задания 8");
         int a = 2023;
-        int b = 200;
-        int d = 100;
-        int c = a - b;
-        int n = a + d;
-        int k = a;
+        int c = a - 200;
+        int n = a + 100;
 
-        while (k < n){
-            k=k+79;
+        for (int i = c; i <= n; ++i) {
+            if(i % 79 == 0) {
+                System.out.println(i);
+            }
 
-            System.out.println(k);
         }
-        for (int i = a; i > c; i = i - 79) {
-            System.out.println(i);
-        }
-
-
     }
- }
+}
